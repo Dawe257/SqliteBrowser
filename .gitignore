@@ -1,2 +1,7 @@
 # Project exclude paths
 /out/
+/src/com/compamy/gui/AppForm.jfd
+/src/com/compamy/gui/StartForm.jfd
+/chinook.db
+/demo.db
+/SQLiteBrowser.iml
