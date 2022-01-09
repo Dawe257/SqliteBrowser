@@ -62,7 +62,7 @@ public class AppForm extends JFrame {
         int returnVal = fileChooser.showSaveDialog(this);
         if (returnVal != JFileChooser.APPROVE_OPTION) return;
         Path db = fileChooser.getSelectedFile().toPath();
-        this.setTitle(db.getFileName() + " - SQLBrowser");
+        this.setTitle(db.getFileName() + " - SQLiteBrowser");
         connection = new Conn(db.toAbsolutePath().toString());
         DefaultTableModel model = new DefaultTableModel(0, 0);
         table1.setModel(model);
