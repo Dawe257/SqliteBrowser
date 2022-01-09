@@ -1,6 +1,6 @@
-package com.compamy;
+package com.company;
 
-import com.compamy.gui.AppForm;
+import com.company.gui.AppForm;
 
 public class Main {
 

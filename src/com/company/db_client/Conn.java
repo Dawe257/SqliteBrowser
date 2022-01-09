@@ -1,4 +1,4 @@
-package com.compamy.db_client;
+package com.company.db_client;
 
 import java.sql.*;
 import java.util.ArrayList;

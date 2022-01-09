@@ -2,10 +2,10 @@
  * Created by JFormDesigner on Sun Jan 09 06:05:13 MSK 2022
  */
 
-package com.compamy.gui;
+package com.company.gui;
 
 import java.awt.event.*;
-import com.compamy.db_client.Conn;
+import com.company.db_client.Conn;
 import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 

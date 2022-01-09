@@ -2,7 +2,7 @@
  * Created by JFormDesigner on Sun Jan 09 08:11:03 MSK 2022
  */
 
-package com.compamy.gui;
+package com.company.gui;
 
 import java.awt.event.*;
 
