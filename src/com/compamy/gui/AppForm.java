@@ -131,7 +131,7 @@ public class AppForm extends JFrame {
         table2 = new JTable();
 
         //======== this ========
-        setMinimumSize(new Dimension(1280, 720));
+        setMinimumSize(new Dimension(800, 600));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("SQLBrowser");
         setComponentOrientation(ComponentOrientation.LEFT_TO_RIGHT);
