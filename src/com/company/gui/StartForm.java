@@ -20,6 +20,7 @@ public class StartForm extends JFrame {
         this.setTitle("SQLiteBrowser");
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/logo.png")));
         initComponents();
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         try {
             UIManager.setLookAndFeel(new FlatLightLaf());
             SwingUtilities.updateComponentTreeUI(this);
