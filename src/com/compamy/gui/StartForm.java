@@ -30,7 +30,7 @@ public class StartForm extends JFrame {
 
     private void pickDb(ActionEvent e) {
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("Database", "db");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Database", "db", "sqlite", "sqlite3");
         fileChooser.setFileFilter(filter);
         int returnVal = fileChooser.showSaveDialog(this);
         if (returnVal != JFileChooser.APPROVE_OPTION) return;
@@ -51,7 +51,7 @@ public class StartForm extends JFrame {
         pickDb.setMaximumSize(new Dimension(50, 50));
         pickDb.setMinimumSize(new Dimension(40, 40));
         pickDb.setPreferredSize(new Dimension(200, 50));
-        pickDb.addActionListener(e -> pickDb(e));
+        pickDb.addActionListener(this::pickDb);
         contentPane.add(pickDb, "card1");
         pack();
         setLocationRelativeTo(getOwner());

@@ -57,7 +57,7 @@ public class AppForm extends JFrame {
 
     private void fileOpen(ActionEvent e) {
         JFileChooser fileChooser = new JFileChooser();
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("Database", "db");
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Database", "db", "sqlite", "sqlite3");
         fileChooser.setFileFilter(filter);
         int returnVal = fileChooser.showSaveDialog(this);
         if (returnVal != JFileChooser.APPROVE_OPTION) return;
@@ -147,13 +147,13 @@ public class AppForm extends JFrame {
 
                 //---- fileOpen ----
                 fileOpen.setText("Open");
-                fileOpen.addActionListener(e -> fileOpen(e));
+                fileOpen.addActionListener(this::fileOpen);
                 menuFile.add(fileOpen);
                 menuFile.addSeparator();
 
                 //---- fileExit ----
                 fileExit.setText("Exit");
-                fileExit.addActionListener(e -> fileExit(e));
+                fileExit.addActionListener(this::fileExit);
                 menuFile.add(fileExit);
             }
             menuBar1.add(menuFile);
@@ -168,12 +168,12 @@ public class AppForm extends JFrame {
 
                     //---- themeDark ----
                     themeDark.setText("Dark");
-                    themeDark.addActionListener(e -> themeDark(e));
+                    themeDark.addActionListener(this::themeDark);
                     viewTheme.add(themeDark);
 
                     //---- themeLight ----
                     themeLight.setText("Light");
-                    themeLight.addActionListener(e -> themeLight(e));
+                    themeLight.addActionListener(this::themeLight);
                     viewTheme.add(themeLight);
                 }
                 menuView.add(viewTheme);
@@ -186,7 +186,7 @@ public class AppForm extends JFrame {
 
                 //---- helpAbout ----
                 helpAbout.setText("About");
-                helpAbout.addActionListener(e -> helpAbout(e));
+                helpAbout.addActionListener(this::helpAbout);
                 menu3.add(helpAbout);
             }
             menuBar1.add(menu3);
