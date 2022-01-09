@@ -2,7 +2,7 @@
 simple java browser for SQLite databases
 
 
-<img src="https://i2.paste.pics/FL6N9.png" width="1000" height="563" alt="Screenshot">
+<img src="https://i2.paste.pics/FL6N9.png" width="800" height="451" alt="Screenshot">
 <hr>
 Running:
 <br>1. Clone
